@@ -361,12 +361,6 @@
         return Math.round(val * k) / k;
     }
 
-<!--    
-    function setViewportData() {
-        $('.viewport_border').attr('text', window.innerWidth + ' x ' + round(Telegram.WebApp.viewportHeight, 2));
-        $('.viewport_stable_border').attr('text', window.innerWidth + ' x ' + round(Telegram.WebApp.viewportStableHeight, 2) + ' | is_expanded: ' + (Telegram.WebApp.isExpanded ? 'true' : 'false'));
-    }
--->
     Telegram.WebApp.onEvent('viewportChanged', setViewportData);
     setViewportData();
 
