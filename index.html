@@ -339,7 +339,7 @@
     }
     $('body').css('visibility', '');
     Telegram.WebApp.MainButton
-        .setText('CLOSE WEBVIEW')
+        .setText('Закрыть')
         .show()
         .onClick(function () {
             webviewClose();
@@ -367,7 +367,6 @@
     }
 
     Telegram.WebApp.onEvent('viewportChanged', setViewportData);
-    setViewportData();
 
 
 </script>
