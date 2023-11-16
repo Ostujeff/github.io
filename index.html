@@ -1,62 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Профиль человека</title>
-    <style>
-        .profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
-        }
-
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-
-        .like-button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            cursor: pointer;
-            background-color: #ff4500;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .like-counter {
-            margin-top: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Ошибка 404</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .hidden-link {
+    display: none;
+  }
+  .message {
+    font-size: 2em;
+    color: red;
+  }
+</style>
 </head>
-
 <body>
-
-    <div class="profile">
-        <img src="test.jpeg" alt="Фотография человека">
-        <p>Иван Иванов, 25 лет, программист из Москвы.</p>
-        <button class="like-button" onclick="addLike()">Поставить лайк</button>
-        <div class="like-counter" id="likeCounter">0 лайков</div>
-    </div>
-
-    <script>
-        let likes = 0;
-
-        function addLike() {
-            likes += 1;
-            document.getElementById("likeCounter").innerText = `${likes} ${declOfNum(likes, ['лайк', 'лайка', 'лайков'])}`;
-        }
-
-        function declOfNum(n, titles) {
-            return titles[(n % 10 == 1 && n % 100 != 11) ? 0 : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) ? 1 : 2];
-        }
-    </script>
-
+  <div class="message">Упс... Кажется вам не сюда :(</div>
+  <!-- Скрытая ссылка -->
+  <a href="https://example.com" class="hidden-link">Перейти</a>
 </body>
-
 </html>
